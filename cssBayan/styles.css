@@ -3,7 +3,29 @@ body {
   margin: 0;
   background-color: azure;
   border-bottom: 1px solid rgba(220, 225, 228, 255);
+  font-size: 24px;
 }
 header {
   margin-top: 3%;
+}
+input {
+  width: 0;
+  height: 0;
+  appearance: none;
+  position: absolute;
+}
+label {
+  display: block;
+  width: 100%;
+}
+
+span {
+  display: none;
+}
+article input:checked + label span,
+article label:hover span {
+  display: block;
+}
+img {
+  width: 15%;
 }
