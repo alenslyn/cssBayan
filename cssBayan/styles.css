@@ -16,7 +16,7 @@ input {
 }
 label {
   display: block;
-  width: 100%;
+  width: 50%;
 }
 
 span {
@@ -28,4 +28,22 @@ article label:hover span {
 }
 img {
   width: 15%;
+}
+main {
+  width: 500px;
+}
+.meme__cross {
+  transform: rotate(45deg);
+  width: 4%;
+}
+.meme__cross {
+  display: none;
+}
+
+main:hover .meme__cross {
+  display: block;
+}
+article input:checked + label .meme__cross,
+article label:hover .meme__cross {
+  transform: rotate(0deg);
 }
