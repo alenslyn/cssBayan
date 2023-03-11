@@ -1,49 +1,54 @@
-body {
+body,
+h2 {
   padding: 0;
   margin: 0;
-  background-color: azure;
-  border-bottom: 1px solid rgba(220, 225, 228, 255);
-  font-size: 24px;
 }
+
+body {
+  background-color: azure;
+  font-size: 1em;
+  font-family: Verdana, sans-serif;
+}
+
 header {
   margin-top: 3%;
 }
-input {
+
+main,
+header {
+  width: 90vw;
+  margin-left: 5vw;
+}
+
+.meme {
+  border-top: 1px solid rgba(220, 225, 228, 255);
+}
+
+.meme__switch {
   width: 0;
   height: 0;
   appearance: none;
-  position: absolute;
-}
-label {
-  display: block;
-  width: 50%;
 }
 
-span {
+.meme__content {
+  display: flex;
+  flex-direction: column;
+  margin: 1em 0;
+}
+
+.content__title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title__cross {
+  width: 1em;
   display: none;
-}
-article input:checked + label span,
-article label:hover span {
-  display: block;
-}
-img {
-  width: 15%;
-}
-main {
-  width: 500px;
-}
-.meme__cross {
   transform: rotate(45deg);
-  width: 4%;
-}
-.meme__cross {
-  display: none;
 }
 
-main:hover .meme__cross {
-  display: block;
-}
-article input:checked + label .meme__cross,
-article label:hover .meme__cross {
-  transform: rotate(0deg);
+.content__img {
+  width: 60vw;
+  display: none;
+  margin: 1em auto;
 }
