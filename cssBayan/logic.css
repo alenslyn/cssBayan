@@ -11,3 +11,8 @@ input:checked + .meme__content .title__cross,
 label:hover .title__cross {
   transform: rotate(0deg);
 }
+
+input:checked + .meme__content .title__text,
+main:hover .title__text {
+  color: black;
+}
