@@ -1,22 +1,35 @@
-main:hover .title__cross {
-  display: block;
-  opacity: 1;
-  transition: opacity 1s;
-}
-
-input:checked + .meme__content .content__img,
-label:hover .content__img {
+input:checked + .meme__content .content__img {
   width: 55vw;
   transition: width 0.5s;
 }
 
-input:checked + .meme__content .title__cross,
-label:hover .title__cross {
+input:checked + .meme__content .title__cross {
   transform: rotate(0deg);
   transition: transform 1s;
 }
 
-input:checked + .meme__content .title__text,
-main:hover .title__text {
+input:checked + .meme__content .title__text {
   color: black;
+}
+
+@media (hover: hover) {
+  main:hover .title__cross {
+    display: block;
+    opacity: 1;
+    transition: opacity 1s;
+  }
+
+  label:hover .content__img {
+    width: 55vw;
+    transition: width 0.5s;
+  }
+
+  label:hover .title__cross {
+    transform: rotate(0deg);
+    transition: transform 1s;
+  }
+
+  main:hover .title__text {
+    color: black;
+  }
 }
