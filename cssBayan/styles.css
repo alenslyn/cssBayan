@@ -1,0 +1,97 @@
+body,
+h2 {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: azure;
+  font-size: 0.75em;
+  font-family: Verdana, sans-serif;
+}
+
+header {
+  margin-top: 3%;
+}
+
+main,
+header {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.meme__switch {
+  width: 0;
+  height: 0;
+  appearance: none;
+}
+
+.meme__content {
+  display: flex;
+  flex-direction: column;
+  margin: 1em 0;
+}
+
+.content__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.title__cross {
+  width: 1em;
+  opacity: 0;
+  display: block;
+  transform: rotate(45deg);
+  margin-left: 5%;
+}
+
+.content__img {
+  width: 0;
+  display: block;
+  margin: 0 auto;
+}
+
+.title__text {
+  color: blue;
+}
+
+.content__img,
+.content__title,
+.meme__content,
+.meme__switch,
+.title__cross,
+.title__text {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  body {
+    font-size: 0.8em;
+  }
+
+  main,
+  header {
+    width: 80vw;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1560px) {
+  main,
+  header {
+    width: 50vw;
+  }
+  body {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 1560px) {
+  main,
+  header {
+    width: 50vw;
+  }
+  body {
+    font-size: 1.25em;
+  }
+}

@@ -1,0 +1,92 @@
+input:checked + .meme__content .content__img {
+  width: 55vw;
+  margin: 0.5em auto;
+  transition: width 0.5s;
+}
+
+input:checked + .meme__content .title__cross {
+  transform: rotate(0deg);
+  transition: transform 1s;
+}
+
+input:checked + .meme__content .title__text {
+  color: black;
+}
+
+@media (hover: hover) {
+  main:hover .title__cross {
+    display: block;
+    opacity: 1;
+    transition: opacity 1s;
+  }
+
+  label:hover .content__img {
+    width: 55vw;
+    margin: 0.5em auto;
+    transition: width 0.5s;
+  }
+
+  label:hover .title__cross {
+    transform: rotate(0deg);
+    transition: transform 1s;
+  }
+
+  main:hover .title__text {
+    color: black;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 820px) {
+  input:checked + .meme__content .content__img {
+    width: 60%;
+    margin: 0.5em auto;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 820px) and (hover: hover) {
+  label:hover .content__img {
+    width: 60%;
+    margin: 0.5em auto;
+  }
+}
+
+@media (min-width: 820px) and (max-width: 1024px) {
+  input:checked + .meme__content .content__img {
+    width: 45%;
+  }
+}
+
+@media (hover: hover) and (min-width: 820px) and (max-width: 1024px) {
+  label:hover .content__img {
+    width: 45%;
+    margin: 0.5em auto;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1560px) {
+  input:checked + .meme__content .content__img {
+    width: 30vw;
+    margin: 0.5em auto;
+  }
+}
+
+@media (hover: hover) and (min-width: 1024px) and (max-width: 1560px) {
+  label:hover .content__img {
+    width: 30vw;
+    margin: 0.5em auto;
+  }
+}
+
+@media (min-width: 1560px) {
+  input:checked + .meme__content .content__img {
+    width: 25vw;
+    margin: 0.5em auto;
+  }
+}
+
+@media (hover: hover) and (min-width: 1560px) {
+  label:hover .content__img {
+    width: 25vw;
+    margin: 0.5em auto;
+  }
+}
