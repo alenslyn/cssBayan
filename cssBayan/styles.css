@@ -6,7 +6,7 @@ h2 {
 
 body {
   background-color: azure;
-  font-size: 1em;
+  font-size: 0.75em;
   font-family: Verdana, sans-serif;
 }
 
@@ -17,7 +17,7 @@ header {
 main,
 header {
   width: 90vw;
-  margin-left: 5vw;
+  margin: 0 auto;
 }
 
 .meme {
@@ -47,13 +47,13 @@ header {
   opacity: 0;
   display: block;
   transform: rotate(45deg);
-  margin-left: 1%;
+  margin-left: 5%;
 }
 
 .content__img {
   width: 0;
   display: block;
-  margin: 1em auto;
+  margin: 0.5em auto;
 }
 
 .title__text {
@@ -67,4 +67,35 @@ header {
 .title__cross,
 .title__text {
   cursor: pointer;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  body {
+    font-size: 0.8em;
+  }
+
+  main,
+  header {
+    width: 80vw;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1560px) {
+  main,
+  header {
+    width: 50vw;
+  }
+  body {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 1560px) {
+  main,
+  header {
+    width: 50vw;
+  }
+  body {
+    font-size: 1.25em;
+  }
 }
