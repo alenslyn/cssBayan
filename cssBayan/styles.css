@@ -20,10 +20,6 @@ header {
   margin: 0 auto;
 }
 
-.meme {
-  border-top: 1px solid rgba(220, 225, 228, 255);
-}
-
 .meme__switch {
   width: 0;
   height: 0;
