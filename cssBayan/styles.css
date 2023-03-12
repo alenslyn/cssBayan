@@ -47,6 +47,7 @@ header {
   opacity: 0;
   display: block;
   transform: rotate(45deg);
+  margin-left: 1%;
 }
 
 .content__img {
