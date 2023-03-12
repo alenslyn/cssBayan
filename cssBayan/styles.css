@@ -43,13 +43,14 @@ header {
 
 .title__cross {
   width: 1em;
-  display: none;
+  opacity: 0;
+  display: block;
   transform: rotate(45deg);
 }
 
 .content__img {
-  width: 60vw;
-  display: none;
+  width: 0;
+  display: block;
   margin: 1em auto;
 }
 

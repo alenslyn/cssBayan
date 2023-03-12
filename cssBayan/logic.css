@@ -1,15 +1,19 @@
 main:hover .title__cross {
   display: block;
+  opacity: 1;
+  transition: opacity 1s;
 }
 
 input:checked + .meme__content .content__img,
 label:hover .content__img {
-  display: block;
+  width: 55vw;
+  transition: width 0.5s;
 }
 
 input:checked + .meme__content .title__cross,
 label:hover .title__cross {
   transform: rotate(0deg);
+  transition: transform 1s;
 }
 
 input:checked + .meme__content .title__text,
