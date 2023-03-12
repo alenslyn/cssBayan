@@ -57,3 +57,12 @@ header {
 .title__text {
   color: blue;
 }
+
+.content__img,
+.content__title,
+.meme__content,
+.meme__switch,
+.title__cross,
+.title__text {
+  cursor: pointer;
+}
